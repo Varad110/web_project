@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  background-color: #262626;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+#city-input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px 10px 10px 0px;
+  background-color: #333;
+  color: #fff;
+}
+#get-weather-btn {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+#add-task-btn:hover {
+  background-color: #0056b3;
+}
+#todo-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#todo-list li {
+  background-color: #444;
+  padding: 5px 10px;
+  display: flex;
+  margin-bottom: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #555;
+}
+#todo-list li:last-child {
+  border-bottom: none;
+}
+#todo-list li > div > button {
+  float: right;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 20px;
+  margin-left: 10px;
+  font-size: 15px;
+  padding: 5px 10px;
+}
+.edit {
+  background-color: #0056b3 !important;
+}
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+.hidden {
+  display: none;
+}
+#error-message {
+  color: red;
+}
+#weather-info {
+  margin: 20px;
+}
